@@ -1,0 +1,143 @@
+<body>
+  <nav>
+    <label class="logo"><i class="fa-solid fa-star-half-stroke"></i>Interior Design</label>
+    <ul>
+      <li><a  (click)="scrollPoint1(point_1)">Home</a></li>
+      <li><a  (click)="scrollPoint2()" >About Us</a></li>
+      <li><a  (click)="scrollPoint3()">Contact</a></li>
+    </ul>
+  </nav>
+  <div>
+    <div #point_1>
+     <section class="section1">
+      <div class="left"></div>
+      <div class="right">
+        <div class="content">
+          <h1>Our Interior Design</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consectetur reiciendis
+             officiis necessitatibus ipsum quam, eius harum repellendus, 
+            distinctio labore eligendi quod asperiores incidunt vitae optio enim molestiae adipisci soluta!</p>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+     </section>
+    </div>
+  </div>
+  <br>
+</body>
+<body>
+<div>
+  <div #point_2>
+    <div class="about">
+        <h1>About Us</h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores fugit necessitatibus itaque expedita fuga vero eveniet!
+           Beatae blanditiis, reiciendis quisquam, a, odit assumenda error quae inventore dolores aperiam cum?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quasi exercitationem ducimus, ipsam soluta maiores odio dolor, 
+          vitae distinctio rerum accusantium ab facere iure unde, magnam cum consequatur hic labore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores fugit necessitatibus itaque expedita fuga vero eveniet!
+          Beatae blanditiis, reiciendis quisquam.
+        </p>
+      </div>
+    </div>
+      <div class="container">
+        <div class="box">
+          <div class="about-item text-center">
+            <i class="fa fa-book"></i>
+            <h2>Our Mission</h2>
+            <div class="line">
+              <hr>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis rem tenetur vel officia 
+              eius eos unde ducimus eveniet perferendis nobis, enim sed, nostrum necessitatibus 
+              culpa earum nihil numquam quaerat voluptate.vitae distinctio rerum accusantium ab facere iure unde.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="about-item text-center">
+            <i class="fa-solid fa-globe"></i>
+            <h2>Our Vission</h2>
+            <div class="line">
+              <hr>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis rem tenetur vel officia 
+              eius eos unde ducimus eveniet perferendis nobis, enim sed, nostrum necessitatibus 
+              culpa earum nihil numquam quaerat voluptate.vitae distinctio rerum accusantium ab facere iure unde.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="about-item text-center">
+            <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+            <h2>Achievements</h2>
+            <div class="line">
+              <hr>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis rem tenetur vel officia 
+              eius eos unde ducimus eveniet perferendis nobis, enim sed, nostrum necessitatibus 
+              culpa earum nihil numquam quaerat voluptate.vitae distinctio rerum accusantium ab facere iure unde.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  </body>
+  <body>
+    
+
+  <div>
+    <div #point_3>
+      <section class="contact">
+        <div class="cnt">
+            <h1>CONTACT US</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam amet dicta deleniti quidem, cumque rem repudiandae recusandae id assumenda sapiente sunt expedita magni omnis fuga mollitia perferendis optio esse! Sed!</p>
+        </div>
+        <div class="con">
+            <div class="Information">
+                <div class="bx">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="text">
+                            <h2>Addresses</h2>
+                            <p>8 McCullough Dr,<br> New Castle, <br> DE 19720</p>
+                        </div>
+                </div>
+                    <div class="bx">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="text">
+                                <h2>Phone</h2>
+                                <p>502-302-9812</p>
+                            </div>
+                        </div>
+                    <div class="bx">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="text">
+                                <h2>Email</h2>
+                                <p>enteriordesign@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                <div class="contactform">
+                     <form [formGroup]="form">
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input  formControlName="fullName" required>
+                                <span style="padding-left: 5px;">Full Name</span>
+                        </div>
+                         <div class="inputBox">
+                             <input formControlName="email" required>
+                            <span style="padding-left: 5px;">Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea formControlName="textarea" required></textarea>
+                            <span style="padding-left: 5px;">Write your Message...</span>
+                        </div>
+                        <div class="inputBox">
+                           <button type="submit" class="button1" (click)="onSubmit(); reloadPage();">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+    </section>
+    </div>
+  </div>
+</body>
+  <!-- <footer>
+    <p>Copyright &copy; 2022 All right reserved by Mariam Tsamalashvili</p>
+  </footer> -->
